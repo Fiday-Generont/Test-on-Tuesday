@@ -1,4 +1,6 @@
 print("=============> Collaboration <=============")
+def add(a, b):
+    return a - b
 def get_operation():
     while True:
         operation = input("Enter operation (add/divide): ").lower()
