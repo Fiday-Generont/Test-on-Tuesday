@@ -1,4 +1,6 @@
 print("=============> Collaboration <=============")
+def divide(a,b):
+  return a // b
 def add(a, b):
     return a - b
 def get_operation():
