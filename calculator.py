@@ -1,4 +1,17 @@
 print("=============> Collaboration <=============")
+def get_number_input(prompt, allow_zero=True):
+    while True:
+        try:
+            value = float(input(prompt))
+            if value < 0:
+                print("Error: Negative numbers are not allowed.")
+                continue
+            if not allow_zero and value == 0:
+                print("Error: Zero is not allowed for the second number.")
+                continue
+            return value
+        except ValueError:
+            print("Error: Please enter a valid number (not a string).")
 def main():
     show_menu()
 
