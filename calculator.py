@@ -3,6 +3,8 @@ def divide(a,b):
   return a // b
 def add(a, b):
     return a - b
+def show_result(result):
+    print("Result:", result)
 def handle_divide_by_zero(num2):
     while num2 == 0:
         print("Error: Cannot divide by zero. Please enter a new second number.")
@@ -19,7 +21,7 @@ def get_number_input(prompt, allow_zero=True):
     while True:
         try:
             value = float(input(prompt))
-            if value < 0 
+            if value < 0:
                 print("Error: Negative numbers are not allowed.")
                 continue
             if not allow_zero and value == 0:
