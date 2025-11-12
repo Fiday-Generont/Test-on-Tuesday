@@ -1,4 +1,9 @@
 print("=============> Collaboration <=============")
+def handle_divide_by_zero(num2):
+    while num2 == 0:
+        print("Error: Cannot divide by zero. Please enter a new second number.")
+        num2 = get_number_input("Enter second number: ", allow_zero=False)
+    return num2
 def get_operation():
     while True:
         operation = input("Enter operation (add/divide): ").lower()
@@ -10,7 +15,7 @@ def get_number_input(prompt, allow_zero=True):
     while True:
         try:
             value = float(input(prompt))
-            if value < 0:
+            if value < 0
                 print("Error: Negative numbers are not allowed.")
                 continue
             if not allow_zero and value == 0:
