@@ -1,4 +1,11 @@
 print("=============> Collaboration <=============")
+def get_operation():
+    while True:
+        operation = input("Enter operation (add/divide): ").lower()
+        if operation in ["add", "divide"]:
+            return operation
+        print("Error: Please type 'add' or 'divide'.")
+
 def get_number_input(prompt, allow_zero=True):
     while True:
         try:
