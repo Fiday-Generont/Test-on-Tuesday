@@ -4,7 +4,7 @@ def show_menu():
 def divide(a,b):
   return a // b
 def add(a, b):
-    return a - b
+    return a + b
 def show_result(result):
     print("Result:", result)
 def handle_divide_by_zero(num2):
