@@ -3,6 +3,13 @@ def divide(a,b):
   return a // b
 def add(a, b):
     return a - b
+def show_result(result):
+    print("Result:", result)
+def handle_divide_by_zero(num2):
+    while num2 == 0:
+        print("Error: Cannot divide by zero. Please enter a new second number.")
+        num2 = get_number_input("Enter second number: ", allow_zero=False)
+    return num2
 def get_operation():
     while True:
         operation = input("Enter operation (add/divide): ").lower()
